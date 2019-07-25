@@ -12,6 +12,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { StarsComponent } from './stars/stars.component';
 import { SearchComponent } from './search/search.component';
 import {ProductService} from './shared/product.service';
+import {AuctionMaterialModule} from './auction-material/auction-material.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {ProductService} from './shared/product.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AuctionMaterialModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
