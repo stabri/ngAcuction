@@ -1,0 +1,12 @@
+<div class="card" >
+  <img src="http://placehold.it/320x150">
+  <div class="card-body">
+    <h4 class="float-right">{{product.price | currency}}</h4>
+    <h4><a [routerLink]="['/products', product.id]">{{product.title}}</a>
+    </h4>
+    <p class="card-text">{{product.description}}</p>
+  </div>
+  <div class="ratings">
+    <nga-stars [rating]="product.rating"></nga-stars>
+  </div>
+</div>
